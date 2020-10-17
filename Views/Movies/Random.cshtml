@@ -1,13 +1,17 @@
-﻿
-@model Vidly.ViewModels.RandomMovieViewModel
+﻿@model Vidly.ViewModels.RandomMovieViewModel
+
+
+@*@model Vidly.Models.Movie*@
+
+
 
 @{
     ViewBag.Title = "Random";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@{
-    var className = Model.Customers.Count > 3 ? "popular" : null;
+@{ 
+    var className = Model.Customers.Count > 3 ? "popular" : null; 
 }
 
 @*
@@ -16,6 +20,9 @@
 
 
 <h2 class="@className">@Model.Movie.Name</h2>
+
+@*<h2 class="">@Model.Name</h2>*@
+
 
 <h2>List Of Customers</h2>
 
